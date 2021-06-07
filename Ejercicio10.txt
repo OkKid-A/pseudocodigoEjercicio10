@@ -1,0 +1,16 @@
+Proceso Multi
+	total <- 0
+	mult <- 0
+	decena <- 0
+	Mientras (total <= 1000)
+		Leer N
+		total <- total + N
+		Si ((N % 6) == 0) Entonces
+			mult++
+		FinSi
+		Si (N <= 10) & (N >= 0) Entonces
+			decena++
+		FinSi
+	Fin Mientras
+	Escribir "Se ha llegado a 1000 con ",mult," multiplos de 6 y ",decena," números entre 1 y 10"
+FinProceso
